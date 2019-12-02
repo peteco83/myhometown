@@ -1,11 +1,5 @@
 body {
-    background-color: rgb(132, 159, 204);
-}
-
-header {
-    background-image: url(./images/buenos-aires-original.jpg);
-    background-repeat: no-repeat;
-    
+    background-color: #d3c9c9
 }
 
 main p {
@@ -20,4 +14,12 @@ main p {
 
 h1, h2, h3 {
     text-align: center;
+}
+
+h1, h2, h3, p {
+    padding: 0 10px;
+}
+
+div {
+    display: flex;
 }
