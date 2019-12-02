@@ -1,4 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+    background-color: rgb(132, 159, 204);
+}
+
+header {
+    background-image: url(./images/buenos-aires-original.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+main p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em
+}
+
+.baires {
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
 }
