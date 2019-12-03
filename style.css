@@ -8,9 +8,7 @@ body {
     line-height: 1.3;
 }
 
-main div {
-    padding: 0 2rem;
-}
+/* HEADER */
 
 .biggersize {
     font-size: 1.2em;
@@ -21,6 +19,12 @@ main div {
 .caba{
     max-width: 100%;
     height: 300px;
+}
+
+/* MAIN > Section*/
+
+main div {
+    padding: 0 2rem;
 }
 
 .baires {
@@ -44,13 +48,6 @@ h3 {
     width: 100%;
 }
 
-footer {
-    background-color: grey;
-    font-style: italic;
-    text-align: center;
-    padding: 0.5em 0;
-}
-
 div>a {
     font-size: small;
 }
@@ -63,6 +60,17 @@ div {
 .eat {
     margin: 0 0 20px 0;
 }
+
+/* FOOTER */
+
+footer {
+    background-color: grey;
+    font-style: italic;
+    text-align: center;
+    padding: 0.5em 0;
+}
+
+/* MAIN AND FOOTER */
 
 a:link {
     color: red
@@ -79,6 +87,8 @@ a:hover {
 a:active {
     color: red
 }
+
+/* NAVIGATION */
 
 /* Style the navigation menu */
 .topnav {
