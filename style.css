@@ -18,7 +18,9 @@ body {
 
 .caba{
     max-width: 100%;
-    height: 300px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
 }
 
 /* MAIN > Section*/
@@ -27,10 +29,15 @@ main div {
     padding: 0 2rem;
 }
 
+/* the photo of lujan Basilica_de_Nuestra_Senora_de_Lujan768x1030.jpg is displayed cut*/
+
 .baires {
     max-width: 100%;
     height: auto;
+    margin: 10px auto;
+    display: block;
 }
+
 
 h1, h2, h3 {
     text-align: center;
@@ -148,4 +155,8 @@ ul {
     text-align: left;
     font-size: small;
     padding-left: 4px;
+}
+
+@media (min-width: 962px) {
+    .
 }
