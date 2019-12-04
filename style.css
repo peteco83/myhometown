@@ -39,7 +39,6 @@ main div {
     display: block;
 }
 
-
 h2, h3 {
     text-align: center;
 }
@@ -47,8 +46,7 @@ h2, h3 {
 h2 {
     background-color: rgba(78, 74, 74, 0.5);  
     padding: 1em 0;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 h3 {
