@@ -38,6 +38,11 @@ main div {
     display: block;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 h2, h3 {
     text-align: center;
 }
@@ -164,19 +169,16 @@ ul {
         text-align: center;
     }
 
+    h2 {
+        font-size: 2em;
+    }
+
     h3 {
         font-size: 1.7em;
     }
 
     p {
         font-size: 1.4em;
-    }
-
-    .topnav a.icon {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 22px;
     }
 
     .topnav a {   
