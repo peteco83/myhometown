@@ -72,6 +72,11 @@ ul>li {
     text-align: center;
 }
 
+.myLinks li {
+    text-align: left;
+
+}
+
 /* FOOTER */
 
 footer {
@@ -102,15 +107,11 @@ a:active {
 /* NAVIGATION */
 
 /* Style the navigation menu */
-.topnav {
-    overflow: hidden;
-    background-color: rgba(51, 51, 51, 0.5);
-    position: relative;
-  }
-  
+
   /* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
-    display: none;
+    height: 0;
+    overflow: hidden;
 }
 
 /* Style navigation menu links */
@@ -129,8 +130,6 @@ a:active {
 /* Style the hamburger menu */
 .topnav a.icon {
     background: black;
-    display: block;
-    position: absolute;
     right: 0;
     top: 0;
 }
@@ -145,6 +144,13 @@ a:active {
 .active {
     background-color: #4CAF50;
     color: white;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.active h1 {
+    
 }
 
 ul>li {
@@ -166,10 +172,25 @@ i {
     cursor: pointer;
 }
 
+#myLinks {
+    transition: 0.5s;
+    position: fixed;
+}
+
+.myLinks li {
+    padding: 20px;
+    text-align: center;
+    font-size: 200px;
+}
+
+.myLinks a {
+    font-size: 40px;
+}
+
 @media (min-width: 962px) {
 
-    .baires {
-        border: 2px solid gray;
+    .baires, .caba {
+        border-radius: 25px;
     }
     
     .caba {
@@ -193,8 +214,8 @@ i {
         font-size: 40px;
     }
 
-    .topnav>div>a {
-        font-size: 20px;
+    .myLinks a {
+        font-size: 50px;    
     }
 
     .container {
@@ -202,14 +223,12 @@ i {
     }
 
     .container img {
-        /* display: block; */
         flex-grow: 1;
         width: 50%;
     }
 
     .container p {
         flex-grow: 1;
-        /* flex-basis: 50%; */
         padding: 0 30px;
         
     }
@@ -227,6 +246,13 @@ i {
         text-align: center;
     }
 
-    
+    .myLinks li {
+        padding: 20px;
+    }
 
+    #icon {
+        font-size: 50px;
+    }
+
+    
 }

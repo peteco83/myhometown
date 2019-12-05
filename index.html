@@ -17,18 +17,22 @@
     <!-- Top Navigation Menu -->
     <a id="top"></a>
     <nav class="topnav">
-        <h1><a href="#home" class="active">Buenos Aires</a></h1>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a href="#spots" onclick="myFunction()">Nice Spots</a>
-            <a href="#landmarks" onclick="myFunction()">Landmarks</a>
-            <a href="#weather" onclick="myFunction()">Weather</a>
-            <a href="#eat" onclick="myFunction()">Places to eat</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <div class="active"> 
+        <h1><a href="#home">Buenos Aires</a></h1>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i id="icon" class="fa fa-bars"></i>
         </a> 
+        </div>
+        <!-- Navigation links (hidden by default) -->
+        <div class="myLinks" id="myLinks">
+            <ul>
+                <li><a href="#spots" onclick="myFunction()">Nice Spots</a></li>
+                <li><a href="#landmarks" onclick="myFunction()">Landmarks</a></li>
+                <li><a href="#weather" onclick="myFunction()">Weather</a></li>
+                <li><a href="#eat" onclick="myFunction()">Places to eat</a></li>
+            </ul>
+        </div>
+        
     </nav>
 
     <header>
@@ -206,13 +210,18 @@
         const icon = document.getElementById("icon")
         function myFunction() {
             const x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
+            if (x.style.height === "100%") {
+                // x.style.display = "none";
+                x.style.height = "0"
                 icon.style.transform = "rotate(0deg)";
                 
             } else {
-                x.style.display = "block";
+                // x.style.display = "block";
                 icon.style.transform = "rotate(90deg)";
+                x.style.backgroundColor = "grey"
+                x.style.width = "100%"
+                x.style.height = "100%"
+
             }
         }
     </script>
