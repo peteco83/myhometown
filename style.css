@@ -128,11 +128,6 @@ a:active {
 }
 
 /* Style the hamburger menu */
-.topnav a.icon {
-    background: black;
-    right: 0;
-    top: 0;
-}
 
 /* Add a grey background color on mouse-over */
 .topnav a:hover {
@@ -147,10 +142,6 @@ a:active {
     display: flex;
     width: 100%;
     justify-content: space-between;
-}
-
-.active h1 {
-    
 }
 
 ul>li {

@@ -17,7 +17,7 @@
     <!-- Top Navigation Menu -->
     <a id="top"></a>
     <nav class="topnav">
-        <div class="active"> 
+        <div class="active" id="active"> 
         <h1><a href="#home">Buenos Aires</a></h1>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i id="icon" class="fa fa-bars"></i>
@@ -208,6 +208,7 @@
 
     <script>
         const icon = document.getElementById("icon")
+        const active = document.getElementById("active")
         function myFunction() {
             const x = document.getElementById("myLinks");
             if (x.style.height === "100%") {
@@ -221,7 +222,6 @@
                 x.style.backgroundColor = "grey"
                 x.style.width = "100%"
                 x.style.height = "100%"
-
             }
         }
     </script>
