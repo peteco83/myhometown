@@ -29,6 +29,12 @@ main div {
     padding: 0 2rem;
 }
 
+.top {
+    padding: 0 2rem;
+    font-size: small;
+}
+
+
 /* the photo of lujan Basilica_de_Nuestra_Senora_de_Lujan768x1030.jpg is displayed cut*/
 
 .baires {
@@ -58,17 +64,12 @@ h3 {
     width: 100%;
 }
 
-div>a {
-    font-size: small;
-}
-
-div {
-    display: flex;
-    flex-direction: column;
-}
-
 .eat {
     margin: 0 0 20px 0;
+}
+
+ul>li {
+    text-align: center;
 }
 
 /* FOOTER */
@@ -157,17 +158,16 @@ ul {
 .copy {
     text-align: left;
     font-size: small;
-    padding-left: 4px;
+    padding-left: 10px;
 }
 
 @media (min-width: 962px) {
+
     .baires {
         border: 2px solid gray;
     }
 
-    ul>li {
-        text-align: center;
-    }
+    
 
     h2 {
         font-size: 2em;
@@ -189,6 +189,40 @@ ul {
         font-size: 20px;
     }
 
+    .container {
+        display: flex;
+    }
 
+    .container img {
+        /* display: block; */
+        flex-grow: 1;
+        width: 50%;
+    }
+
+    .container p {
+        flex-grow: 1;
+        /* flex-basis: 50%; */
+        padding: 0 30px;
+        
+    }
+
+    .biggersize {
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    .eat a {
+        font-size: x-large;
+    }
+
+    #weather p {
+        text-align: center;
+    }
+
+    i {
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
 
 }
